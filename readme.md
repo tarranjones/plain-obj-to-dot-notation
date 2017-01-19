@@ -1,5 +1,6 @@
-# plain-obj-to-dot-notation [![Build Status](https://travis-ci.org/tarranjones/is-plain-obj.svg?branch=master)](https://travis-ci.org/tarranjones/plain-obj-to-dot-notation)
-
+# plain-obj-to-dot-notation
+[![Build Status](https://travis-ci.org/tarranjones/plain-obj-to-dot-notation.svg?branch=master)](https://travis-ci.org/tarranjones/plain-obj-to-dot-notation)
+[![NPM](https://nodei.co/npm/plain-obj-to-dot-notation.png)](https://nodei.co/npm/plain-obj-to-dot-notation/)
 
 > Converts a plain object to dot-notation
 
