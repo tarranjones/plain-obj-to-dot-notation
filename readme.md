@@ -26,6 +26,62 @@ plainObjToDotNotation({foo: { bar : [ baz, qux ]})};
 }
 
 
+	var obj = {
+		foo : {
+			bar : [
+				{
+					a:{
+						y:{ a:1},
+						z:{ a:1},
+					}
+				},{
+					b:{
+						y:{ a:1},
+						z:{ a:1},
+					}
+				}
+			]
+		}
+	}
+
+	plainObjToDotNotation(obj)
+
+	=> {
+		'foo.bar': [
+				{
+					a:{
+						y:{ a:1},
+						z:{ a:1},
+					}
+				},{
+					b:{
+						y:{ a:1},
+						z:{ a:1},
+					}
+				}
+			]
+
+	}
+
+	var recursive = true;
+
+	plainObjToDotNotation(obj, recursive);
+
+	=> dotnot_recursive = {
+		'foo.bar': [
+				{
+					'a.y.a':1,
+					'a.z.a':1,
+				},
+				{
+					'b.y.a':1,
+					'b.z.a':1,
+				}
+			]
+
+	}
+
+
 ```
 
 
@@ -35,6 +91,7 @@ plainObjToDotNotation({foo: { bar : [ baz, qux ]})};
 
 ## Dependency
 ### is-plain-obj [![Build Status](https://travis-ci.org/sindresorhus/is-plain-obj.svg?branch=master)](https://travis-ci.org/sindresorhus/is-plain-obj)
+### is-obj [![Build Status](https://travis-ci.org/sindresorhus/is-obj.svg?branch=master)](https://travis-ci.org/sindresorhus/is-obj)
 
 
 ## License
