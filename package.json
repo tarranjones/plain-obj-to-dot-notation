@@ -1,6 +1,6 @@
 {
   "name": "plain-obj-to-dot-notation",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Converts a plain object to dot-notation",
   "license": "MIT",
   "repository": "tarranjones/plain-obj-to-dot-notation",
